@@ -26,7 +26,7 @@ export default class ContactList extends React.Component {
     return contacts.map((contact, index) => {
       return (
         <div key={index} className="contact-item">
-          <ContactItem contact={contact} index={index} />
+          <ContactItem contact={contact} />
         </div>
       )
     });
