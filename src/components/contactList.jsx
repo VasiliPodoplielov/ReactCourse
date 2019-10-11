@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactItem from './contactItem';
+import ContactItem from './ContactItem';
 
 export default class ContactList extends React.Component {
 
@@ -22,15 +22,25 @@ export default class ContactList extends React.Component {
     );
   }
 
+  getContacts(contacts) {
+    return contacts.map((contact, index) => {
+      return (
+        <div key={index} className="contact-item">
+          <ContactItem contact={contact} index={index} />
+        </div>
+      )
+    });
+  }
+
   render() {
     const {contacts} = this.props;
 
     return (
-      <div className={'wrapper-contacts'}>
+      <div className='wrapper-contacts'>
         <div>
           {this.header()}
         </div>
-        <ContactItem contacts={contacts} />
+        {this.getContacts(contacts)}
       </div>
     );
   }

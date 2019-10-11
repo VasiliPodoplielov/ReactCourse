@@ -1,8 +1,8 @@
 import React from 'react';
-import ContactList from './components/contactList';
+import ContactList from './components/ContactList';
 import './css/common.css';
 
-class Contacts extends React.Component {
+class App extends React.Component {
   state = {
     contacts: [
       {
@@ -28,7 +28,7 @@ class Contacts extends React.Component {
       },
 
     ]
-  }
+  };
 
 
 
@@ -41,4 +41,4 @@ class Contacts extends React.Component {
   }
 }
 
-export default Contacts;
+export default App;
