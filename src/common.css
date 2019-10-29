@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+.wrapper-action-bar {
+  width: 100%;
+  height: 50px;
+  background-color: lightskyblue;
+  text-align: center;
+  position: relative;
+}
+h1 {
+  margin: 0;
+}
+.add-note {
+  position: absolute;
+  right: 20px;
+  height: 20px;
+  top: calc(50% - 10px);
+}
+.wrapper-notes {
+  background: lavender;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.note-item {
+  width: 200px;
+  margin-right: 20px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+}
+.note-item__title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.note-item__title input {
+  width: 100%;
+  flex-grow: 1;
+  height: 20px;
+}
+.note-item__title button {
+  width: 50px;
+  margin-left: 5px;
+  padding: 0 2px;
+  height: 20px;
+}
